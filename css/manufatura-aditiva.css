@@ -1,0 +1,346 @@
+/* ==========================================
+   VÍDEO CUSTOMCAST
+========================================== */
+
+.ma-video-section {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.ma-video-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    padding: 25px 0;
+    overflow: hidden;
+}
+
+.ma-video-wrapper .ma-customcast-video {
+    display: block !important;
+    width: 360px !important;
+    max-width: 360px !important;
+    height: auto !important;
+    max-height: none !important;
+    margin: 0 auto !important;
+    object-fit: contain !important;
+
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 767px) {
+
+    .ma-video-wrapper {
+        padding: 10px;
+    }
+
+    .ma-video-wrapper .ma-customcast-video {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+/* ==========================================
+   SEÇÕES
+========================================== */
+
+.ma-section {
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+.ma-section-title {
+    max-width: 850px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.ma-section-title h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.ma-section-title p {
+    color: #777;
+    line-height: 1.8;
+}
+
+
+/* ==========================================
+   PROCESSO
+========================================== */
+
+.ma-process {
+    margin-bottom: 20px;
+}
+
+.ma-process-step {
+    position: relative;
+    min-height: 280px;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    border: 1px solid #eee;
+    background: #fff;
+}
+
+.ma-process-number {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #075a9c;
+}
+
+.ma-process-step > i {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #075a9c;
+}
+
+.ma-process-step h3 {
+    margin-bottom: 15px;
+}
+
+.ma-process-step p {
+    color: #777;
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   BENEFÍCIOS
+========================================== */
+
+.ma-benefits {
+    margin-bottom: 20px;
+}
+
+.ma-benefit-card {
+    min-height: 240px;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    border: 1px solid #eee;
+    background: #fff;
+}
+
+.ma-benefit-card > i {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #075a9c;
+}
+
+.ma-benefit-card h3 {
+    margin-bottom: 15px;
+}
+
+.ma-benefit-card p {
+    color: #777;
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   TECNOLOGIAS
+========================================== */
+
+.ma-tech-card {
+    height: 100%;
+    margin-bottom: 30px;
+    border: 1px solid #eee;
+    background: #fff;
+}
+
+.ma-tech-content {
+    padding: 35px;
+}
+
+.ma-tech-content h3 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.ma-tech-content p {
+    color: #777;
+    line-height: 1.7;
+}
+
+.ma-tech-content ul {
+    padding-left: 20px;
+    color: #777;
+    line-height: 1.8;
+}
+
+
+/* ==========================================
+   PROJETOS
+========================================== */
+
+.ma-project-card {
+    margin-bottom: 30px;
+    border: 1px solid #eee;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.ma-project-card:hover {
+    transform: translateY(-5px);
+}
+
+.ma-project-image {
+    height: 240px;
+    overflow: hidden;
+}
+
+.ma-project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ma-project-content {
+    padding: 25px;
+}
+
+.ma-project-content h3 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.ma-project-content p {
+    color: #777;
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   COMPARATIVO
+========================================== */
+
+.ma-comparison {
+    margin-bottom: 30px;
+}
+
+.ma-comparison-card {
+    height: 100%;
+    padding: 35px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+.ma-comparison-card h3 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.ma-comparison-card.ma-highlight {
+    border: 2px solid #075a9c;
+}
+
+.ma-comparison-data p {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    margin: 0;
+    border-bottom: 1px solid #eee;
+}
+
+.ma-comparison-data p:last-child {
+    border-bottom: none;
+}
+
+.ma-comparison-data span {
+    text-align: right;
+}
+
+
+/* ==========================================
+   RESULTADOS
+========================================== */
+
+.ma-results {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.ma-result {
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.ma-result strong {
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    color: #075a9c;
+    margin-bottom: 10px;
+}
+
+.ma-result span {
+    display: block;
+    color: #777;
+}
+
+.ma-disclaimer {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+}
+
+
+/* ==========================================
+   RESPONSIVO
+========================================== */
+
+@media (max-width: 767px) {
+
+    .ma-video-section {
+        padding-top: 10px;
+    }
+
+    .ma-video-wrapper {
+        padding: 10px;
+    }
+
+    .ma-customcast-video {
+        width: 100%;
+        height: auto;
+        max-height: none;
+    }
+
+    .ma-section {
+        padding-top: 50px;
+    }
+
+    .ma-process-step,
+    .ma-benefit-card {
+        min-height: auto;
+    }
+
+    .ma-project-image {
+        height: 220px;
+    }
+
+    .ma-comparison-card {
+        margin-bottom: 30px;
+    }
+
+    .ma-comparison-data p {
+        display: block;
+    }
+
+    .ma-comparison-data span {
+        display: block;
+        margin-top: 5px;
+        text-align: left;
+    }
+}
