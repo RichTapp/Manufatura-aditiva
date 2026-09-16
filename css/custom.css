@@ -1,0 +1,581 @@
+/* start navs elements*/
+.multilevel .dropdown-menu .dropdown-menu {
+    margin-left: 90%;
+    margin-top: -30px;
+}
+/* and navs elements */
+
+ul.primary-menu li .sub-menu {
+    background: #005395;
+}
+.portfolio-sec.two, .portfolio-sec.three {
+    background: none;
+    padding-top: 0;
+
+}
+.sticky {
+    position: sticky;
+    z-index: 2;
+    top: 60px;
+}
+
+.bt {
+    border-top: 1px solid #d92128;
+}
+
+.i1 {
+    font-size: 10px;
+    position: absolute;
+    right: 0px;
+    top: 23px;
+}
+
+.portfolio-filter li {
+    position: relative;
+}
+.portfolio-filter li a {
+    position: relative;
+    display: block;
+    height: 20px;
+}
+
+
+@media (min-width: 1200px){
+    #cont-teste{
+        max-width: 1600px;
+    }
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo1 {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 60px;
+    width: 240px;
+    padding: 0 10px 12px;
+    box-sizing: border-box;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    z-index: 35 !important;
+}
+
+.linhalogo {
+    border-top: 3px solid #005d9f;
+    width: 90%;
+    margin: 2px auto 0;
+}
+
+/* Coloca os dois logos lado a lado */
+.logo1 .logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    height: 105px;
+}
+
+/* Cada imagem ocupa metade do espaÃ§o */
+.logo1 .logo-img {
+    display: block;
+    width: 100%;
+    height: 90px;
+    max-width: 100%;
+    object-fit: contain;
+    margin: 0;
+}
+
+.header{
+    /* background-color: #002240; */
+    position: relative;
+    padding: 5px 0px 20px 0px;
+    opacity: 1;
+    height: 60px;
+    z-index: 1;
+}
+
+.tab-content img{
+    width: auto !important;
+}
+
+.teste-single {
+	height: 480px;
+	/* display: block; */
+	/* float: left; */
+	position: relative;
+	padding: 3px 3px 32px;
+	background-color: #fff;
+	border: 1px solid #dfdfdf;
+	border-top: 3px solid #005d9f;
+	text-decoration: none !important;
+	box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.2);
+	margin-bottom: 45px;
+	text-align: center;
+	padding-right: 15px;
+	padding-left: 15px;
+    /* max-width: 23% !important; */
+    /* left: 2%; */
+    /* margin-left: 20px; */
+}
+
+.teste-single h5 {
+	color: #d92128;
+	font-size: 16px;
+}
+
+.teste-single h3 {
+	font-size: 23px;
+}
+
+
+.esp_sobre {
+    height: 30px !important;
+}
+
+.esp_sobre::after {
+    width: 80% !important;
+    right: 10% !important;
+    top: 0px !important;
+}
+
+.pd-desc {
+    min-height: 150px;
+}
+
+.imgP {
+    width: 85% !important;
+    margin: 0px auto !important;
+    max-height: 400px !important;
+}
+
+.transparencia-banner {
+    border: 1px solid rgba(20, 20, 20, .20);
+    color: #fff;
+    background-color: rgba(0, 83, 149, .75);
+    width: fit-content !important;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgba(0, 83, 149, .85);
+    font-size: 36px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px rgba(20, 20, 20, .20), 0px 0px 10px rgba(20, 20, 20, .20);
+    text-align: left;
+    margin-top: 1em;
+}
+
+.cookies {
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    left:0px;
+    width: 100%;
+    display: flex;
+    padding: 50px auto;
+    background: #1e76c0;
+    height: 150px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #1e76c0;
+    z-index: 9999;
+}
+
+
+.cookies .centrar {
+    max-width: 800px;
+    margin: 0px auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.cookies .centrar p {
+    color: #fff;
+    margin: 0px 0px;
+    line-height: 1.2;
+    text-align: left;
+    font-size: 15px
+
+}
+
+.cookies .centrar p a {
+    text-decoration: underline;
+    color: #fff;
+
+}
+
+.bt_ok {
+    background: #fff;
+    color: #1e76c0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    font-weight: bold;
+    width: 350px;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.headercss {
+    position: fixed;
+    width: 100%;
+    background-color: #115395;
+    height: 85px;
+    top: 40px;
+}
+.headcss{
+    position: fixed;
+    width: 100%;
+    height: 58px;
+    background-color: #005395;
+    z-index: 35;
+}
+
+.setaprox {
+    z-index: 2;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #ed2425;
+    position: absolute;
+    right: 1em;
+    top: calc(50% - 48px);
+    cursor: pointer;
+    color: white;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.setaAntes {
+    z-index: 2;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #ed2425;
+    position: absolute;
+    left: 1em;
+    top: calc(50% - 48px);
+    cursor: pointer;
+    color: white;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.setaNext {
+    z-index: 2;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #ed2425;
+    position: absolute;
+    right: 1em;
+    top: calc(50% - 48px);
+    cursor: pointer;
+    color: white;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10%;
+}
+
+.setaPrev {
+    z-index: 2;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #ed2425;
+    position: absolute;
+    left: 1em;
+    top: calc(50% - 48px);
+    cursor: pointer;
+    color: white;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10%;
+}
+
+ul.primary-menu .sub-menu li:hover {
+    border-left: 2px solid red;
+    background: #1f75ba;
+}
+
+.logos-mobile {
+    display: none;
+    max-width: 100px;
+    background-color: white;
+    padding: .5em;
+    position: fixed;
+    top: 0;
+    left: 1em;
+    border: 1px solid rgba(20, 20, 20, .2);
+    border-radius: 0 0 4px 4px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo1 {
+        display: none;
+    }
+
+    .logos-mobile {
+        display: block;
+    }
+
+    .logo-facebook {
+        display: none;
+    }
+
+    #bandeira-brasil {
+        right: 160px !important;
+        padding-top: 20px !important;
+    }
+
+    #bandeira-eua {
+        right: 120px !important;
+        padding-top: 20px !important;
+    }
+
+    #bandeira-espanha {
+        right: 80px !important;
+        padding-top: 20px !important;
+    }
+
+    #separador-topo {
+        display: none !important;
+    }
+
+    #topo {
+        height: 68px !important;
+    }
+
+    .primary-menu {
+        position: fixed;
+        top: 48px;
+        left: 0;
+    }
+}
+
+.chat-online {
+    color: #34ce57
+}
+
+.chat-offline {
+    color: #e4606d
+}
+
+.chat-messages {
+    display: flex;
+    flex-direction: column;
+    max-height: 800px;
+    overflow-y: scroll
+}
+
+.chat-message-left,
+.chat-message-right {
+    display: flex;
+    flex-shrink: 0
+}
+
+.chat-message-left {
+    margin-right: auto
+}
+
+.chat-message-right {
+    flex-direction: row-reverse;
+    margin-left: auto
+}
+.py-3 {
+    padding-top: 1rem!important;
+    padding-bottom: 1rem!important;
+}
+.px-4 {
+    padding-right: 1.5rem!important;
+    padding-left: 1.5rem!important;
+}
+.flex-grow-0 {
+    flex-grow: 0!important;
+}
+.border-top {
+    border-top: 1px solid #dee2e6!important;
+}
+.effect-st {
+    /* Set up the hover */
+    /* If you aren't using autoprefix, remember to prefix the gradient for other browsers */
+    background-image: linear-gradient(#ed2425, #ed2425);
+    background-size: 0 1px, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: all .3s ease-out;
+}
+.link-hover {
+    color: white !important;
+    transition: all 0.4s ease;
+}
+.link-hover:hover {
+    color: white !important;
+    transition: all 0.3s ease;
+    transform: scale(1.2);
+    background-size: 80% 5px, auto;
+}
+.bg-hover {
+    max-height: 80vh;
+    overflow-y: auto;
+    transition: all 0.3s ease;
+    background-color: #005395;
+}
+.active-st{
+    background-image: linear-gradient(#ed2425, #ed2425);
+    background-size: 80% 2px, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.setaprox {
+    z-index: 2;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #ed2425;
+    position: absolute;
+    right: 1em;
+    top: calc(50% - 48px);
+    cursor: pointer;
+    color: white;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.setaAntes {
+    z-index: 2;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #ed2425;
+    position: absolute;
+    left: 1em;
+    top: calc(50% - 48px);
+    cursor: pointer;
+    color: white;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.setaNext {
+    z-index: 2;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #ed2425;
+    position: absolute;
+    right: 1em;
+    top: calc(50% - 48px);
+    cursor: pointer;
+    color: white;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10%;
+}
+
+.setaPrev {
+    z-index: 2;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #ed2425;
+    position: absolute;
+    left: 1em;
+    top: calc(50% - 48px);
+    cursor: pointer;
+    color: white;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10%;
+}
+
+ul.primary-menu .sub-menu li:hover {
+    border-left: 2px solid red;
+    background: #1f75ba;
+}
+
+.logos-mobile {
+    display: none;
+    max-width: 100px;
+    background-color: white;
+    padding: .5em;
+    position: fixed;
+    top: 0;
+    left: 1em;
+    border: 1px solid rgba(20, 20, 20, .2);
+    border-radius: 0 0 4px 4px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo1 {
+        display: none;
+    }
+
+    .logos-mobile {
+        display: block;
+    }
+
+    .logo-facebook {
+        display: none;
+    }
+
+    #bandeira-brasil {
+        right: 160px !important;
+        padding-top: 20px !important;
+    }
+
+    #bandeira-eua {
+        right: 120px !important;
+        padding-top: 20px !important;
+    }
+
+    #bandeira-espanha {
+        right: 80px !important;
+        padding-top: 20px !important;
+    }
+
+    #separador-topo {
+        display: none !important;
+    }
+
+    #topo {
+        height: 68px !important;
+    }
+
+    .primary-menu {
+        position: fixed;
+        top: 48px;
+        left: 0;
+    }
+}

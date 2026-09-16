@@ -1,0 +1,511 @@
+/* Página interna MGA - revisão visual */
+html { scroll-behavior: smooth; }
+
+.ma-internal-topbar { min-height:45px; }
+.ma-internal-label { color:#fff; font-size:11px; letter-spacing:1.8px; font-weight:700; text-align:right; padding:12px 40px 0 0; }
+.ma-internal-label i { margin-right:8px; }
+.ma-internal-header { position:relative; z-index:20; }
+.ma-internal-menu > li > a { white-space:nowrap; }
+
+/* Banner */
+.ma-internal-banner {
+  min-height:520px;
+  margin-top:-90px;
+  padding-top:205px;
+  padding-bottom:110px;
+  background:linear-gradient(135deg,#fff 0%,#f4f7fa 50%,#e8f0f6 100%);
+  overflow:hidden;
+}
+.ma-internal-banner:after {
+  content:""; position:absolute; width:520px; height:520px; border-radius:50%;
+  right:-150px; bottom:-260px; background:#1f75ba; opacity:.08;
+}
+.ma-internal-banner .container { position:relative; z-index:2; }
+.ma-internal-banner .row { justify-content:center; }
+.ma-internal-banner .prod-category { display:inline-block; }
+.ma-internal-banner h1 {
+  max-width:920px; margin:15px auto 22px;
+  font-size:48px; line-height:1.15; color:#333;
+}
+.ma-banner-text {
+  max-width:760px; margin:0 auto;
+  color:#666; line-height:1.8; font-size:17px;
+}
+
+/* Estrutura geral */
+.ma-internal-content { padding-top:65px; }
+.ma-section { padding:35px 0 65px; scroll-margin-top:20px; }
+.ma-section-title { max-width:860px; margin:0 auto 35px; text-align:center; }
+.ma-section-title.text-left { margin-left:0; text-align:left; }
+.ma-section-title h2 { margin-top:8px; margin-bottom:18px; color:#333; }
+.ma-section-title p { color:#777; line-height:1.8; margin-bottom:0; }
+
+/* Perguntas */
+.ma-question-panel { border-left:4px solid #1f75ba; background:#f7f7f7; padding:8px 25px; }
+.ma-question-panel div { display:flex; align-items:center; gap:16px; padding:17px 0; border-bottom:1px solid #e4e4e4; color:#555; }
+.ma-question-panel div:last-child { border-bottom:0; }
+.ma-question-panel i { color:#1f75ba; width:24px; text-align:center; font-size:18px; }
+
+/* Cards de possibilidades */
+.ma-benefits, .ma-process, .ma-projects { margin-bottom:0; }
+.ma-possibility-grid > div,
+.ma-internal-process > div,
+.ma-projects > div { display:flex; margin-bottom:30px; }
+
+.ma-benefit-card {
+  width:100%; min-height:250px; padding:32px 25px; margin:0;
+  text-align:center; border:1px solid #eee; background:#fff;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  transition:all .25s ease;
+}
+.ma-benefit-card:hover { border-color:#1f75ba; transform:translateY(-4px); box-shadow:0 10px 28px rgba(0,0,0,.07); }
+.ma-benefit-card > i { display:block; margin:0 0 20px; font-size:30px; color:#1f75ba; }
+.ma-benefit-card h3 { width:100%; margin:0 0 15px; color:#333; font-size:19px; text-align:center; }
+.ma-benefit-card p { max-width:245px; margin:0 auto; color:#777; line-height:1.7; text-align:center; }
+
+/* Processo */
+.ma-process-step {
+  width:100%; min-height:300px; padding:34px 28px; margin:0;
+  position:relative; text-align:center; border:1px solid #eee; background:#fff;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  transition:all .25s ease;
+}
+.ma-process-step:hover { border-color:#d6e4ef; box-shadow:0 10px 25px rgba(0,0,0,.05); }
+.ma-process-step > i { display:block; margin-bottom:18px; font-size:32px; color:#1f75ba; }
+.ma-process-number { display:block; margin-bottom:18px; font-size:13px; font-weight:700; letter-spacing:2px; color:#1f75ba; }
+.ma-process-step h3 { margin:0 0 15px; text-align:center; }
+.ma-process-step p { max-width:275px; margin:0 auto; color:#777; line-height:1.7; text-align:center; }
+
+/* Projetos */
+.ma-project-card {
+  width:100%; min-height:100%; padding:0; margin:0; border:1px solid #eee;
+  background:#fff; text-align:center; cursor:pointer; font-family:inherit;
+  transition:all .3s ease;
+}
+.ma-project-card:focus { outline:2px solid #1f75ba; outline-offset:2px; }
+.ma-project-card:hover { transform:translateY(-5px); box-shadow:0 12px 28px rgba(0,0,0,.08); }
+.ma-project-image { height:240px; overflow:hidden; background:#f4f4f4; }
+.ma-project-image img { width:100%; height:100%; object-fit:cover; display:block; }
+.ma-project-content { padding:28px 30px 30px; text-align:center; }
+.ma-project-content h3 { margin:10px 0 15px; text-align:center; }
+.ma-project-content p { max-width:300px; margin:0 auto 20px; color:#777; line-height:1.7; text-align:center; }
+.ma-project-more { color:#1f75ba; font-weight:700; text-transform:uppercase; font-size:11px; letter-spacing:1px; }
+
+/* Detalhes: ocultos até o clique */
+.ma-project-details-container { width:100%; }
+.ma-project-details {
+  display:none;
+  margin-top:10px;
+  padding:40px;
+  border-top:3px solid #1f75ba;
+  background:#f7f7f7;
+}
+.ma-project-details.active { display:block; animation:maProjectOpen .4s ease; }
+.ma-project-detail-header { text-align:center; margin-bottom:30px; }
+.ma-project-detail-header h2 { margin-top:8px; }
+.ma-solution-story > div { margin-bottom:20px; }
+.ma-solution-story > div > strong,
+.ma-solution-story > div > p { display:block; text-align:center; }
+.ma-solution-story strong { margin-bottom:10px; color:#1f75ba; text-transform:uppercase; font-size:11px; letter-spacing:1px; }
+.ma-solution-story p { max-width:240px; margin:0 auto; color:#666; line-height:1.7; }
+.ma-project-close-container { display:flex; justify-content:center; margin-top:25px; }
+.ma-project-close {
+  padding:11px 26px; border:1px solid #1f5d8c; background:transparent;
+  color:#1f5d8c; font-size:12px; font-weight:700; letter-spacing:1px;
+  text-transform:uppercase; cursor:pointer; transition:.2s;
+}
+.ma-project-close:hover,
+.ma-project-close:focus { background:#1f5d8c; color:#fff; outline:none; }
+@keyframes maProjectOpen {
+  from { opacity:0; transform:translateY(15px); }
+  to { opacity:1; transform:translateY(0); }
+}
+
+/* Demais seções */
+.ma-think-section { border-top:1px solid #eee; border-bottom:1px solid #eee; background:#fafafa; padding-left:30px; padding-right:30px; }
+.ma-think-list { list-style:none; padding:0; margin:0; }
+.ma-think-list li { position:relative; padding:14px 0 14px 30px; color:#666; border-bottom:1px solid #e5e5e5; line-height:1.6; }
+.ma-think-list li:last-child { border-bottom:0; }
+.ma-think-list li:before { content:"\f00c"; font-family:"Font Awesome 5 Free"; font-weight:900; position:absolute; left:0; color:#1f75ba; }
+.ma-contact-section { padding-bottom:80px; }
+.ma-contact-card { min-height:190px; padding:35px; margin-bottom:25px; border:1px solid #eee; text-align:center; background:#fff; }
+.ma-contact-card i { color:#1f75ba; font-size:28px; margin-bottom:15px; }
+.ma-contact-card h3 { font-size:20px; margin-bottom:20px; }
+.ma-contact-card p { color:#666; margin:6px 0; }
+.ma-internal-footer { margin-top:0; }
+
+@media (max-width:991px) {
+  .ma-internal-label { padding-right:20px; }
+  .ma-internal-banner { margin-top:0; padding-top:80px; min-height:auto; }
+  .ma-internal-banner h1 { font-size:38px; }
+  .ma-internal-menu { padding-top:10px; }
+  .ma-internal-menu > li > a { display:block; padding:12px 0 !important; }
+  .ma-internal-menu { display:none; background:#fff; position:absolute; top:50px; right:0; width:300px; padding:15px 25px 20px !important; box-shadow:0 10px 25px rgba(0,0,0,.12); }
+  .ma-internal-menu.ma-menu-open { display:block; }
+}
+@media (max-width:767px) {
+  .ma-internal-topbar { display:none; }
+  .ma-internal-banner { padding-top:55px; padding-bottom:70px; }
+  .ma-internal-banner h1 { font-size:30px; }
+  .ma-banner-text { font-size:15px; }
+  .ma-section { padding:25px 0 45px; }
+  .ma-section-title h2 { font-size:27px; }
+  .ma-think-section { padding-left:15px; padding-right:15px; }
+  .ma-project-details { padding:25px 20px; }
+}
+
+/* =========================================
+   ETAPAS DA HISTÓRIA DA SOLUÇÃO
+========================================= */
+
+.ma-solution-step {
+    height: 100%;
+    padding: 25px 20px;
+    text-align: center;
+}
+
+
+.ma-solution-icon {
+    display: block;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+
+.ma-solution-step strong {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+.ma-solution-step p {
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   CARROSSEL DO PROJETO
+========================================= */
+
+.ma-project-carousel {
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto 10px;
+}
+
+
+.ma-project-carousel img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+
+
+/* Placeholder enquanto não houver imagens */
+
+.ma-project-carousel-placeholder {
+    width: 100%;
+    height: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px dashed rgba(0, 0, 0, 0.25);
+
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+
+/* Melhor visual para os controles */
+
+.ma-project-carousel .carousel-control-prev,
+.ma-project-carousel .carousel-control-next {
+    width: 10%;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%231f75ba' width='8' height='8' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%231f75ba' width='8' height='8' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l4 4-4 4L1.25 6.5 3.75 4l-2.5-2.5z'/%3E%3C/svg%3E");
+}
+
+/* =========================================
+   RESPONSIVO
+========================================= */
+
+@media (max-width: 767px) {
+
+    .ma-solution-step {
+        margin-bottom: 20px;
+    }
+
+    .ma-project-carousel img,
+    .ma-project-carousel-placeholder {
+        height: 250px;
+    }
+
+}
+
+/* =========================================
+   TODAS AS SOLUÇÕES
+========================================= */
+
+.ma-all-solutions-cta {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 25px;
+}
+
+
+/* BOTÃO */
+
+.ma-all-solutions-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    padding: 14px 28px;
+
+    border: 1px solid #1f75ba;
+
+    color: #1f75ba;
+    background: #fff;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    transition: all .25s ease;
+}
+
+
+.ma-all-solutions-button:hover,
+.ma-all-solutions-button:focus {
+    background: #1f75ba;
+    color: #fff;
+
+    text-decoration: none;
+}
+
+
+.ma-all-solutions-button i {
+    font-size: 13px;
+}
+
+
+/* SECTION */
+
+.ma-all-solutions-section {
+    padding-top: 20px;
+}
+
+
+/* CARROSSEL */
+
+.ma-all-solutions-carousel {
+    position: relative;
+
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 0 70px;
+}
+
+
+/* CARD */
+
+.ma-all-solution-card {
+    border: 1px solid #e8e8e8;
+
+    background: #fff;
+
+    overflow: hidden;
+}
+
+
+/* DUAS IMAGENS */
+
+.ma-all-solution-images {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 1px;
+
+    background: #e8e8e8;
+}
+
+
+.ma-all-solution-images figure {
+    position: relative;
+
+    height: 360px;
+
+    margin: 0;
+
+    overflow: hidden;
+
+    background: #f5f5f5;
+}
+
+
+.ma-all-solution-images img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* LEGENDA DA IMAGEM */
+
+.ma-all-solution-images figcaption {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    padding: 7px 13px;
+
+    margin: 0;
+
+    background: rgba(255, 255, 255, .92);
+
+    color: #1f75ba;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+/* CONTEÚDO */
+
+.ma-all-solution-content {
+    max-width: 760px;
+
+    padding: 30px 35px 34px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+.ma-all-solution-content h3 {
+    margin: 10px 0 14px;
+
+    color: #333;
+}
+
+
+.ma-all-solution-content p {
+    margin: 0;
+
+    color: #777;
+
+    line-height: 1.7;
+}
+
+
+/* SETAS DO CARROSSEL */
+
+.ma-all-solutions-carousel .carousel-control-prev,
+.ma-all-solutions-carousel .carousel-control-next {
+    width: 55px;
+
+    opacity: 1;
+}
+
+
+.ma-all-solutions-carousel .carousel-control-prev {
+    left: 0;
+}
+
+
+.ma-all-solutions-carousel .carousel-control-next {
+    right: 0;
+}
+
+
+.ma-all-solutions-carousel .carousel-control-prev-icon,
+.ma-all-solutions-carousel .carousel-control-next-icon {
+    width: 18px;
+    height: 30px;
+
+    background-size: 100% 100%;
+}
+
+
+/* TEXTO ABAIXO */
+
+.ma-all-solutions-note {
+    max-width: 720px;
+
+    margin: 25px auto 0;
+
+    color: #777;
+
+    text-align: center;
+
+    line-height: 1.7;
+}
+
+
+.ma-all-solutions-note i {
+    margin-right: 8px;
+
+    color: #1f75ba;
+}
+
+
+/* =========================================
+   RESPONSIVO
+========================================= */
+
+@media (max-width: 767px) {
+
+    .ma-all-solutions-carousel {
+        padding: 0 38px;
+    }
+
+
+    .ma-all-solution-images figure {
+        height: 220px;
+    }
+
+
+    .ma-all-solution-content {
+        padding: 25px 20px 28px;
+    }
+
+
+    .ma-all-solutions-carousel .carousel-control-prev,
+    .ma-all-solutions-carousel .carousel-control-next {
+        width: 30px;
+    }
+
+
+    .ma-all-solutions-button {
+        width: 100%;
+        max-width: 340px;
+    }
+
+}
